@@ -27,4 +27,16 @@ Una **Pokédex interactiva** hecha con **HTML, CSS y JavaScript** que te permite
 
 ## 🔹 Estructura del proyecto
 
+pokedex/
+├── index.html
+├── css/
+│ └── main.css
+├── js/
+│ └── main.js
+├── img/
+│ ├── pokeball.png
+│ └── pokemon-imagen.png
+└── README.md
+
+
 
