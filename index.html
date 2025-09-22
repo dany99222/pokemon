@@ -13,7 +13,11 @@
       <nav class="nav">
         <div class="imagenes">
           <img class="logo-pokedex" src="img/pokeball.png" alt="Logo Pokédex" />
-          <img class="texto-pokedex" src="img/pokemon-imagen.png" alt="Texto pokedex">
+          <img
+            class="texto-pokedex"
+            src="img/pokemon-imagen.png"
+            alt="Texto pokedex"
+          />
         </div>
 
         <ul class="nav-list">
@@ -80,6 +84,11 @@
           <li class="nav-item">
             <button class="btn btn-header fairy" id="fairy">Fairy</button>
           </li>
+          <input
+            type="text"
+            id="buscarPokemon"
+            placeholder="Buscar Pokémon..."
+          />
         </ul>
       </nav>
     </header>
@@ -89,7 +98,9 @@
         <div class="pokemon-todos" id="listaPokemon"></div>
       </div>
     </main>
-
+    <button id="btn-top" title="Ir al inicio">
+      <img src="img/pokeball.png" alt="" />
+    </button>
     <script src="js/main.js"></script>
   </body>
 </html>

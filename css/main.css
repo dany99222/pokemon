@@ -109,16 +109,17 @@ header {
   width: 100%;
   margin: 0 auto; /* centra el header */
   padding: 1rem;
-  background-color: var(--clr-black);
+  background-color: rgba(0, 0, 0, 0.93);
   box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 /* Fijo solo en tabletas y arriba */
 @media screen and (min-width: 768px) {
   header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
@@ -162,6 +163,7 @@ main {
   padding: 2rem;
   max-width: 100rem;
   margin: 0 auto;
+
 }
 .pokemon-todos {
   display: grid;
@@ -355,8 +357,42 @@ main {
 .hidden {
   display: none;
 }
+#btn-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
 
-.flex{
-    display: flex;
-    justify-content: space-between;
+  background-color: transparent; /* transparente porque usamos imagen */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+   box-shadow: 0 0 1rem 0.2rem rgba(255, 0, 0, 0.8);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+#btn-top:hover {
+  transform: scale(1.1);
+  opacity: 2;
+}
+
+#btn-top img {
+  width: 50px;  /* tamaño de la imagen */
+  height: 50px;
+  display: block;
+}
+
+#buscarPokemon {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #ff0000; /* rojo estilo Pokéball */
+  outline: none;
+  margin-left: 1rem;
+}
+
+#buscarPokemon:focus {
+  border-color: #ffcc00; /* amarillo al enfocar */
 }

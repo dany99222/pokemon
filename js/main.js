@@ -29,6 +29,7 @@ let modoFiltro = false; //  control de estado
 
 // Cargar un bloque de Pokémon
 function cargarPokemon() {
+
   if (modoFiltro) return; //  Si estamos en filtro, no cargar más
   if (offset > maxPokemon) return;
 
@@ -124,3 +125,47 @@ window.addEventListener("scroll", () => {
 
 // Cargar los primeros Pokémon
 cargarPokemon();
+
+const btnTop = document.querySelector("#btn-top");
+
+// Mostrar/ocultar botón al hacer scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+});
+
+// Al hacer click, volver al inicio suavemente
+btnTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// Inicialmente oculto
+btnTop.style.display = "none";
+
+
+// ==========================
+//  Buscar pokemones
+// ==========================
+
+const inputBuscar = document.querySelector("#buscarPokemon");
+
+
+inputBuscar.addEventListener("input", () => {
+  const query = inputBuscar.value.toLowerCase();
+  const pokemones = document.querySelectorAll(".pokemon");
+
+  pokemones.forEach((poke) => {
+    const nombre = poke.querySelector(".pokemon-nombre").textContent.toLowerCase();
+    if (nombre.includes(query)) {
+      poke.style.display = "block"; // se muestra
+    } else {
+      poke.style.display = "none";  // se oculta
+    }
+  });
+});
