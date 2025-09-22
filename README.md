@@ -1,22 +1,30 @@
-# Pokédex con PokéAPI
+# Pokédex Web App 🐾
 
-#### Aquí podrán encontrar los archivos que utilicé en este video.
+Una **Pokédex interactiva** hecha con **HTML, CSS y JavaScript** que te permite explorar los Pokémon de forma dinámica y divertida, con scroll infinito, filtros por tipo y barra de búsqueda.
 
-El video está en YouTube, [haciendo clic aquí](https://youtu.be/EmxvMPcIy5c).
+---
 
-### Autor
-- Carpi Coder
+## 🔹 Funcionalidades
 
-### Contacto
-- [www.carpicoder.com](https://carpicoder.com)
-- [hola@carpicoder.com](mailto:hola@carpicoder.com)
+- **Scroll infinito:** Los Pokémon se cargan en bloques de 15 para mejorar el rendimiento.
+- **Filtros por tipo:** Selecciona un tipo (Fire, Water, Electric, etc.) y muestra solo los Pokémon de ese tipo.
+- **Ver todos:** Botón para volver a la vista completa de todos los Pokémon.
+- **Barra de búsqueda:** Busca Pokémon por nombre en tiempo real.
+- **Botón flotante “Ir al inicio”:** Siempre visible en la pantalla, con efecto hover y sombra roja.
+- **Header sticky y transparente:** Permanece visible al hacer scroll y se adapta a dispositivos móviles y tabletas.
+- **Read Name (Opcional):** Al hacer click en un Pokémon, se muestra su nombre destacado y se puede pronunciar con síntesis de voz (SpeechSynthesis).
 
-### Redes sociales
-- [YouTube](https://youtube.com/carpicoder)
-- [Instagram](https://instagram.com/carpicoder)
-- [TikTok](https://tiktok.com/@carpicoder)
-- [X](https://twitter.com/carpicoder)
-- [Discord](https://discord.gg/wHKxGbMt4A)
-- [LinkedIn](https://linkedin.com/in/matiascoletta)
+---
 
-#### Para apoyar mi contenido, podés entrar en [carpicoder.com/donaciones](https://carpicoder.com/donaciones)
+## 🔹 Tecnologías utilizadas
+
+- **HTML5**: Estructura del proyecto.
+- **CSS3**: Estilos y responsive design.
+- **JavaScript (Vanilla JS)**: Funcionalidad, fetch API y scroll infinito.
+- **[PokéAPI](https://pokeapi.co/)**: API pública para obtener datos de los Pokémon.
+
+---
+
+## 🔹 Estructura del proyecto
+
+
